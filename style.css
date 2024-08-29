@@ -103,8 +103,8 @@ nav a.active{
 
     nav a{
         display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
+        font-size: 1.6rem;
+        margin: 2rem 0;
     }
 
     nav a:hover,
@@ -113,21 +113,37 @@ nav a.active{
         border-radius: 0.5rem;
         border-bottom: 0.5rem solid #b74b4b;
     }
+
+    .menu-toggle {
+        display: block; /* Show a menu toggle button */
+    }
+}
+
+.menu-toggle.active + nav {
+    display: block;
 }
 
 section{
     min-height: calc(100vh - 10rem);
-    padding: 5rem 9% 5rem;
+    padding: 2rem 5% ;
     margin-top: 8rem; 
     color: white; 
 }
 
 .home{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 8rem;
     background-color: black;
+}
+
+.home-content {
+    text-align: center; /* Center-align content for better readability */
+    padding: 2rem;
+    max-width: 90%; /* Ensure content doesn't overflow */
+    margin-bottom: 2rem; /* Space below content */
 }
 
 .home .home-content h1{
@@ -156,11 +172,12 @@ span{
 
 .home-img img{
     position: relative;
-    width: 32vw;
+    width: 80vw;
     border-radius: 50%;
     box-shadow: 0 0 25px solid #b74b4b;
     cursor: pointer;
     transition: 0.2s linear;
+    margin-top: 2rem;
 }
 
 .home-img img:hover{
@@ -261,7 +278,7 @@ span{
     }
 
     p, ul li, ol li {
-        font-size: 1.8rem; /* Slightly smaller text on smaller screens */
+        font-size: 1.6rem; /* Slightly smaller text on smaller screens */
     }
     .home{
         gap: 4rem;
