@@ -9,6 +9,11 @@
 <body>
     <header>
         <a href="index.html" class="logo">Rohan Mathew</a>
+
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        
         <nav>
             <a href="index.html">Home</a>
             <a href="skills.html">Skills</a>
@@ -23,5 +28,16 @@
         <p>LinkedIn: <a href="https://linkedin.com/in/rohan-mathew-5151551a4" target="_blank">Click here</a></p>
         <p>Phone: [+91 9677229388]</p>
     </section>
+
+    <script>
+        const menuToggle = document.getElementById('mobile-menu');
+        const nav = document.querySelector('nav');
+
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+    </script>
+    
 </body>
 </html>
