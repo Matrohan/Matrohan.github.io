@@ -23,6 +23,32 @@ body{
     color: white;
 }
 
+.menu-toggle {
+    display: none;
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: white;
+}
+
+/* Show the menu toggle button on mobile devices */
+@media (max-width: 995px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+    }
+
+    nav.active {
+        display: flex;
+    }
+}
+
 h1 {
     font-size: 3.6rem; /* Larger size for main headings */
 }
@@ -114,9 +140,7 @@ nav a.active{
         border-bottom: 0.5rem solid #b74b4b;
     }
 
-    .menu-toggle {
-        display: block; /* Show a menu toggle button */
-    }
+    
 }
 
 .menu-toggle.active + nav {
@@ -132,19 +156,12 @@ section{
 
 .home{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 8rem;
     background-color: black;
 }
 
-.home-content {
-    text-align: center; /* Center-align content for better readability */
-    padding: 2rem;
-    max-width: 90%; /* Ensure content doesn't overflow */
-    margin-bottom: 2rem; /* Space below content */
-}
 
 .home .home-content h1{
     font-size: 6rem;
@@ -239,7 +256,7 @@ span{
 }
 
 .typing-text span::before{
-    content: "software Developer";
+    content: "SDE";
     color: #b74b4b;
     animation: words 20s infinite;
 }
@@ -257,7 +274,7 @@ span{
 
 @keyframes cursor{
     to{
-        border-left: 3px solid #b74b4b;
+        border-left: 1px solid #b74b4b;
     }
 }
 
@@ -266,7 +283,7 @@ span{
         content: "Data Analyst";
     }
     51%, 1000%{
-        content: "Software Developer";
+        content: "SDE";
     }
     
     
