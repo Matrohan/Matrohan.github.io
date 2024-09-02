@@ -9,6 +9,12 @@
 <body>
     <header>
         <a href="index.html" class="logo">Rohan Mathew</a>
+        
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        
         <nav>
             <a href="index.html">Home</a>
             <a href="skills.html" class="active">Skills</a>
@@ -29,6 +35,18 @@
             <li>Soft Skills: Problem-Solving, Critical Thinking, Collaboration</li>
         </ul>
     </section>
+
+    <script>
+        const menuToggle = document.getElementById('mobile-menu');
+        const nav = document.querySelector('nav');
+
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+    </script>
+
+    
 </body>
 </html>
 
