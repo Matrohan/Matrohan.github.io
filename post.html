@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Post · Rohan Mathew</title>
+<meta name="description" content="Rohan Mathew, PhD research scholar working on deep learning for autism and Alzheimer's detection and explainable machine learning for security.">
+<link rel="icon" href="otaku.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!--BODY-START-->
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html" data-bind="name"></a>
+    <nav class="nav-links" id="navLinks" aria-label="Sections">
+      <a href="index.html#research">Research</a>
+      <a href="index.html#publications">Publications</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#journey">Journey</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="blog.html" class="active">Blog</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Switch colour theme">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 1 0 0 18V3z"/><circle cx="12" cy="12" r="8.2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="progress" id="progress"></div>
+</header>
+<main id="main" data-page="post">
+  <article class="wrap post" id="post"></article>
+</main>
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <span>© <span id="year"></span> <span data-bind="name"></span></span>
+    <a href="index.html">Home</a>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<!--BODY-END-->
+<script src="data.js"></script>
+<script src="posts.js"></script>
+<script src="blog.js"></script>
+</body>
+</html>
